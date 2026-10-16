@@ -72,7 +72,84 @@
     @media(max-width:800px){.navlinks{display:none}.hero{padding:54px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.visual{min-height:330px}.camera-art{height:215px}.services{grid-template-columns:repeat(2,1fr)}.cta{align-items:flex-start;flex-direction:column}}
     @media(max-width:520px){.services{grid-template-columns:1fr}.brand{font-size:.83rem}.brandmark{width:40px;height:40px}.topbar .wrap{font-size:.78rem}.hero-actions .btn{width:100%}.checks{grid-template-columns:1fr}.visual-tag{font-size:.75rem}.tag-one{left:0}.tag-two{right:0}.camera-card{padding:14px}}
   </style>
-</head>
+</head><style>
+  :root {
+    --navy: #071A35;
+    --blue: #123C70;
+    --white: #FFFFFF;
+    --gold: #D9AE55;
+    --light: #F3F6FA;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--navy);
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 24px 16px;
+    text-align: center;
+    border-bottom: 3px solid var(--gold);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+
+  header p {
+    margin: 8px 0 0;
+    color: #DCE6F5;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  section {
+    padding: 28px 18px;
+  }
+
+  h2 {
+    color: var(--navy);
+  }
+
+  .service-card {
+    background: var(--white);
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+    box-shadow: 0 4px 16px #071A3512;
+  }
+
+  .contact {
+    background: var(--navy);
+    color: var(--white);
+    padding: 28px 18px;
+    text-align: center;
+  }
+
+  .contact h2 {
+    color: var(--white);
+  }
+
+  .contact a {
+    color: var(--gold);
+  }
+</style>
 <body><img src="cctv-banner.jpg" alt="Shree Ganesh Computers CCTV Installation" style="width:100%; height:auto; border-radius:12px;">
   <div class="topbar">
     <div class="wrap"><span>📍 Subhash Chowk, Main Bazar, Dehu Road, Pune</span><span>Computer • CCTV • Networking Solutions</span></div>
