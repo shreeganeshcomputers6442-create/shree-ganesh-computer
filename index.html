@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07152c">
+  <meta name="description" content="Shree Ganesh Computers, Dehu Road, Pune — CCTV sales and installation, networking, computer and laptop repair, video door phone and intercom systems.">
+  <title>Shree Ganesh Computers | CCTV & Computer Solutions</title>
+  <style>
+    :root{--navy:#07152c;--navy2:#0b2144;--blue:#2f80ed;--cyan:#53d7ff;--white:#f7faff;--muted:#b9c7dc;--line:rgba(255,255,255,.13);--panel:rgba(255,255,255,.055)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,92%);margin:auto}
+    .topbar{border-bottom:1px solid var(--line);background:#061126;font-size:.88rem;color:var(--muted)}
+    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px 0}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,21,44,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}
+    .brandmark{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#061126;font-weight:950;font-size:1.1rem;box-shadow:0 8px 28px #2f80ed44}
+    .brand small{display:block;color:var(--muted);font-size:.69rem;letter-spacing:.12em;font-weight:600}
+    .navlinks{display:flex;gap:24px;align-items:center;font-size:.92rem;color:#d9e4f4}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:12px 18px;font-weight:750;border:1px solid transparent;transition:.2s}
+    .btn.primary{background:linear-gradient(135deg,var(--blue),#1d67d2);color:white;box-shadow:0 10px 26px #2f80ed33}
+    .btn.secondary{border-color:var(--line);background:rgba(255,255,255,.04)}
+    .btn:hover{transform:translateY(-2px)}
+    .hero{padding:76px 0 64px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 78% 25%,#164a8270 0,transparent 38%),linear-gradient(145deg,#07152c,#0b2144 68%,#07152c)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #53d7ff55;background:#53d7ff10;color:#9beaff;padding:7px 12px;border-radius:999px;font-size:.82rem;font-weight:750}
+    h1{font-size:clamp(2.5rem,5.3vw,4.7rem);line-height:1.04;letter-spacing:-.045em;margin:20px 0}
+    h1 span{color:var(--cyan)}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:610px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+    .proof{display:flex;gap:18px;flex-wrap:wrap;color:#d8e5f8;font-size:.88rem}
+    .proof span:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:7px}
+    .visual{min-height:390px;position:relative;display:grid;place-items:center}
+    .orb{position:absolute;width:320px;height:320px;border-radius:50%;background:#2f80ed20;filter:blur(10px)}
+    .camera-card{position:relative;width:min(100%,420px);padding:22px;border:1px solid #ffffff22;border-radius:28px;background:linear-gradient(145deg,#ffffff13,#ffffff04);box-shadow:0 30px 90px #0005;transform:rotate(2deg)}
+    .camera-art{height:240px;border-radius:20px;position:relative;overflow:hidden;background:linear-gradient(145deg,#183b68,#07152c);display:grid;place-items:center}
+    .camera-art:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,#53d7ff17 48%,transparent 70%);transform:translateX(-20%)}
+    .cam{position:relative;width:215px;height:112px;border-radius:24px 28px 28px 24px;background:linear-gradient(145deg,#f4f8ff,#8ea6c6 50%,#dbe7f7);box-shadow:0 18px 35px #0007;transform:rotate(-9deg)}
+    .cam:before{content:"";position:absolute;left:-35px;top:19px;width:54px;height:74px;border-radius:12px;background:linear-gradient(90deg,#6b819d,#e9f1fc)}
+    .cam:after{content:"";position:absolute;right:17px;top:20px;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle at 38% 35%,#537caa,#0b1830 55%,#02060d 72%);border:7px solid #c3d0e3;box-shadow:inset 0 0 15px #000}
+    .cam-label{position:absolute;bottom:14px;left:16px;font-size:.74rem;letter-spacing:.16em;color:#a9c5e7}
+    .visual-tag{position:absolute;padding:12px 15px;border:1px solid #ffffff26;border-radius:14px;background:#0b2144e8;box-shadow:0 15px 40px #0004;font-weight:750;font-size:.86rem}
+    .tag-one{left:-8px;top:35px}.tag-two{right:-10px;bottom:42px}
+    section{padding:76px 0}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+    .kicker{color:var(--cyan);font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:.76rem}
+    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.035em;line-height:1.12;margin:12px 0}
+    .section-head p,.muted{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:24px;min-height:210px;transition:.2s}
+    .service:hover{border-color:#53d7ff77;transform:translateY(-4px)}
+    .icon{width:48px;height:48px;border-radius:14px;background:#2f80ed20;border:1px solid #53d7ff30;display:grid;place-items:center;font-size:1.45rem;margin-bottom:18px}
+    .service h3{margin:0 0 8px;font-size:1.1rem}.service p{margin:0;color:var(--muted);font-size:.94rem}
+    .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center}
+    .about-box{border:1px solid var(--line);border-radius:24px;padding:28px;background:linear-gradient(145deg,#10294d,#091a34)}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+    .checks div{color:#e2ecfb;font-size:.94rem}.checks div:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:8px}
+    .cta{border:1px solid #53d7ff38;border-radius:26px;padding:38px;background:radial-gradient(ellipse at 90% 10%,#2f80ed35,transparent 45%),#0b2144;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .cta h2{margin-top:0}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .contact-card{border:1px solid var(--line);background:var(--panel);padding:25px;border-radius:20px}
+    .contact-card h3{margin-top:0}
+    .contact-line{padding:10px 0;border-bottom:1px solid var(--line);color:#e0eaf8}
+    .contact-line:last-child{border:0}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem}
+    footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .float-wa{position:fixed;right:18px;bottom:18px;z-index:20;background:#20c768;color:#04170b;border-radius:999px;padding:13px 17px;font-weight:850;box-shadow:0 12px 35px #0005}
+    @media(max-width:800px){.navlinks{display:none}.hero{padding:54px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.visual{min-height:330px}.camera-art{height:215px}.services{grid-template-columns:repeat(2,1fr)}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:520px){.services{grid-template-columns:1fr}.brand{font-size:.83rem}.brandmark{width:40px;height:40px}.topbar .wrap{font-size:.78rem}.hero-actions .btn{width:100%}.checks{grid-template-columns:1fr}.visual-tag{font-size:.75rem}.tag-one{left:0}.tag-two{right:0}.camera-card{padding:14px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap"><span>📍 Subhash Chowk, Main Bazar, Dehu Road, Pune</span><span>Computer • CCTV • Networking Solutions</span></div>
+  </div>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home" aria-label="Shree Ganesh Computers home">
+        <span class="brandmark">SG</span>
+        <span>SHREE GANESH COMPUTERS<small>ALWAYS AHEAD FOR YOUR SERVICE</small></span>
+      </a>
+      <div class="navlinks"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <a class="btn primary" href="#contact">Get a Quote ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">● YOUR LOCAL TECHNOLOGY PARTNER</div>
+          <h1>Smarter Security.<br><span>Reliable Technology.</span></h1>
+          <p class="lead">CCTV installation, computer repairs and networking solutions for homes, shops and businesses in Dehu Road, Pune.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://wa.me/917040704089?text=Hello%20Shree%20Ganesh%20Computers%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener">WhatsApp Us ↗</a>
+            <a class="btn secondary" href="tel:+917040704089">Call 7040704089</a>
+          </div>
+          <div class="proof"><span>CCTV Sales & Installation</span><span>Repair & Support</span><span>Local Service</span></div>
+        </div>
+        <div class="visual" aria-label="Illustration of a security camera">
+          <div class="orb"></div>
+          <div class="visual-tag tag-one">⌁ Smart Surveillance</div>
+          <div class="camera-card">
+            <div class="camera-art"><div class="cam"></div><div class="cam-label">SECURITY • CONNECTIVITY • CARE</div></div>
+            <p style="margin:16px 0 0;font-weight:800">Protect what matters.</p>
+            <p style="margin:3px 0 0;color:var(--muted);font-size:.9rem">CCTV & technology services made simple.</p>
+          </div>
+          <div class="visual-tag tag-two">✓ Installation & Service</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">What we do</div><h2>Solutions for your security & technology needs</h2><p>From camera installation to computer support, get practical service for your home, shop or office.</p></div>
+        <div class="services">
+          <article class="service"><div class="icon">📹</div><h3>CCTV Sales & Installation</h3><p>Security camera solutions, installation and maintenance for homes, shops and workplaces.</p></article>
+          <article class="service"><div class="icon">🖥️</div><h3>Computer Repairing</h3><p>Help with desktop issues, troubleshooting, upgrades and routine computer support.</p></article>
+          <article class="service"><div class="icon">💻</div><h3>Laptop Repairing</h3><p>Diagnosis and repair support for common laptop hardware and software issues.</p></article>
+          <article class="service"><div class="icon">🌐</div><h3>Networking</h3><p>Network setup and connectivity solutions for homes, shops and small offices.</p></article>
+          <article class="service"><div class="icon">🔔</div><h3>Video Door Phone</h3><p>Video door phone solutions to help you see and communicate with visitors.</p></article>
+          <article class="service"><div class="icon">☎️</div><h3>Intercom System</h3><p>Intercom solutions for convenient communication across your premises.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="background:#081a34">
+      <div class="wrap about-grid">
+        <div><div class="kicker">Why choose us</div><h2>Friendly support. Practical solutions.</h2><p class="muted">Shree Ganesh Computers serves Dehu Road, Pune with a focus on security systems, computer support and connectivity. Contact us to discuss your requirement and request a quote.</p><a class="btn secondary" href="#contact">Talk to our team →</a></div>
+        <div class="about-box"><h3 style="margin-top:0">Technology support for everyday needs</h3><p class="muted">Whether you need CCTV for a shop, help with a laptop, or networking for an office, tell us what you need and we’ll help you explore a suitable solution.</p><div class="checks"><div>CCTV installation</div><div>Computer support</div><div>Networking setup</div><div>Video door phone</div><div>Laptop repair</div><div>Intercom systems</div></div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap"><div class="cta"><div><div class="kicker">Need a quote?</div><h2>Let’s discuss your requirement.</h2><p class="muted" style="margin-bottom:0">Call or WhatsApp Shree Ganesh Computers today.</p></div><a class="btn primary" href="https://wa.me/917040704089?text=Hello%2C%20please%20share%20a%20quotation%20for%20your%20services." target="_blank" rel="noopener">Request a Quote ↗</a></div></div>
+    </section>
+
+    <section id="contact" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Contact us</div><h2>We’re here to help</h2><p>Contact us for service details or a quotation.</p></div>
+        <div class="contact-grid">
+          <div class="contact-card"><h3>Business details</h3>
+            <div class="contact-line">📍 Subhash Chowk, Main Bazar, Dehu Road, Pune</div>
+            <div class="contact-line">☎️ <a href="tel:+917040704089">7040704089</a></div>
+            <div class="contact-line">☎️ <a href="tel:+919657830434">9657830434</a></div>
+            <div class="contact-line">🕒 Please call to confirm service availability.</div>
+          </div>
+          <div class="contact-card"><h3>Send an enquiry</h3><p class="muted">Choose WhatsApp and tell us which service you need.</p>
+            <p><a class="btn primary" href="https://wa.me/917040704089?text=Hello%20Shree%20Ganesh%20Computers.%20I%20need%20information%20about%3A%20" target="_blank" rel="noopener">Enquire on WhatsApp ↗</a></p>
+            <p><a class="btn secondary" href="tel:+919657830434">Call second number</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><span>© <span id="year"></span> SHREE GANESH COMPUTERS</span><span>Always Ahead For Your Service</span></div></footer>
+  <a class="float-wa" href="https://wa.me/917040704089?text=Hello%20Shree%20Ganesh%20Computers" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp ↗</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
