@@ -1,243 +1,712 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07152c">
-  <meta name="description" content="Shree Ganesh Computers, Dehu Road, Pune — CCTV sales and installation, networking, computer and laptop repair, video door phone and intercom systems.">
-  <title>Shree Ganesh Computers | CCTV & Computer Solutions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Ganesh Computers | CCTV &amp; Technology Solutions</title>
+  <meta
+    name="description"
+    content="Shree Ganesh Computers provides CCTV security, computer and laptop repair, and networking solutions in Dehu Road, Pune."
+  />
   <style>
-    :root{--navy:#07152c;--navy2:#0b2144;--blue:#2f80ed;--cyan:#53d7ff;--white:#f7faff;--muted:#b9c7dc;--line:rgba(255,255,255,.13);--panel:rgba(255,255,255,.055)}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
-    a{color:inherit;text-decoration:none}
-    .wrap{width:min(1120px,92%);margin:auto}
-    .topbar{border-bottom:1px solid var(--line);background:#061126;font-size:.88rem;color:var(--muted)}
-    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px 0}
-    header{position:sticky;top:0;z-index:10;background:rgba(7,21,44,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}
-    .brandmark{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#061126;font-weight:950;font-size:1.1rem;box-shadow:0 8px 28px #2f80ed44}
-    .brand small{display:block;color:var(--muted);font-size:.69rem;letter-spacing:.12em;font-weight:600}
-    .navlinks{display:flex;gap:24px;align-items:center;font-size:.92rem;color:#d9e4f4}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:12px 18px;font-weight:750;border:1px solid transparent;transition:.2s}
-    .btn.primary{background:linear-gradient(135deg,var(--blue),#1d67d2);color:white;box-shadow:0 10px 26px #2f80ed33}
-    .btn.secondary{border-color:var(--line);background:rgba(255,255,255,.04)}
-    .btn:hover{transform:translateY(-2px)}
-    .hero{padding:76px 0 64px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 78% 25%,#164a8270 0,transparent 38%),linear-gradient(145deg,#07152c,#0b2144 68%,#07152c)}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #53d7ff55;background:#53d7ff10;color:#9beaff;padding:7px 12px;border-radius:999px;font-size:.82rem;font-weight:750}
-    h1{font-size:clamp(2.5rem,5.3vw,4.7rem);line-height:1.04;letter-spacing:-.045em;margin:20px 0}
-    h1 span{color:var(--cyan)}
-    .lead{font-size:1.12rem;color:var(--muted);max-width:610px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
-    .proof{display:flex;gap:18px;flex-wrap:wrap;color:#d8e5f8;font-size:.88rem}
-    .proof span:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:7px}
-    .visual{min-height:390px;position:relative;display:grid;place-items:center}
-    .orb{position:absolute;width:320px;height:320px;border-radius:50%;background:#2f80ed20;filter:blur(10px)}
-    .camera-card{position:relative;width:min(100%,420px);padding:22px;border:1px solid #ffffff22;border-radius:28px;background:linear-gradient(145deg,#ffffff13,#ffffff04);box-shadow:0 30px 90px #0005;transform:rotate(2deg)}
-    .camera-art{height:240px;border-radius:20px;position:relative;overflow:hidden;background:linear-gradient(145deg,#183b68,#07152c);display:grid;place-items:center}
-    .camera-art:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,#53d7ff17 48%,transparent 70%);transform:translateX(-20%)}
-    .cam{position:relative;width:215px;height:112px;border-radius:24px 28px 28px 24px;background:linear-gradient(145deg,#f4f8ff,#8ea6c6 50%,#dbe7f7);box-shadow:0 18px 35px #0007;transform:rotate(-9deg)}
-    .cam:before{content:"";position:absolute;left:-35px;top:19px;width:54px;height:74px;border-radius:12px;background:linear-gradient(90deg,#6b819d,#e9f1fc)}
-    .cam:after{content:"";position:absolute;right:17px;top:20px;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle at 38% 35%,#537caa,#0b1830 55%,#02060d 72%);border:7px solid #c3d0e3;box-shadow:inset 0 0 15px #000}
-    .cam-label{position:absolute;bottom:14px;left:16px;font-size:.74rem;letter-spacing:.16em;color:#a9c5e7}
-    .visual-tag{position:absolute;padding:12px 15px;border:1px solid #ffffff26;border-radius:14px;background:#0b2144e8;box-shadow:0 15px 40px #0004;font-weight:750;font-size:.86rem}
-    .tag-one{left:-8px;top:35px}.tag-two{right:-10px;bottom:42px}
-    section{padding:76px 0}
-    .section-head{text-align:center;max-width:700px;margin:0 auto 38px}
-    .kicker{color:var(--cyan);font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:.76rem}
-    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.035em;line-height:1.12;margin:12px 0}
-    .section-head p,.muted{color:var(--muted)}
-    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .service{border:1px solid var(--line);background:var(--panel);border-radius:20px;padding:24px;min-height:210px;transition:.2s}
-    .service:hover{border-color:#53d7ff77;transform:translateY(-4px)}
-    .icon{width:48px;height:48px;border-radius:14px;background:#2f80ed20;border:1px solid #53d7ff30;display:grid;place-items:center;font-size:1.45rem;margin-bottom:18px}
-    .service h3{margin:0 0 8px;font-size:1.1rem}.service p{margin:0;color:var(--muted);font-size:.94rem}
-    .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center}
-    .about-box{border:1px solid var(--line);border-radius:24px;padding:28px;background:linear-gradient(145deg,#10294d,#091a34)}
-    .checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
-    .checks div{color:#e2ecfb;font-size:.94rem}.checks div:before{content:"✓";color:var(--cyan);font-weight:900;margin-right:8px}
-    .cta{border:1px solid #53d7ff38;border-radius:26px;padding:38px;background:radial-gradient(ellipse at 90% 10%,#2f80ed35,transparent 45%),#0b2144;display:flex;align-items:center;justify-content:space-between;gap:25px}
-    .cta h2{margin-top:0}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .contact-card{border:1px solid var(--line);background:var(--panel);padding:25px;border-radius:20px}
-    .contact-card h3{margin-top:0}
-    .contact-line{padding:10px 0;border-bottom:1px solid var(--line);color:#e0eaf8}
-    .contact-line:last-child{border:0}
-    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.88rem}
-    footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    .float-wa{position:fixed;right:18px;bottom:18px;z-index:20;background:#20c768;color:#04170b;border-radius:999px;padding:13px 17px;font-weight:850;box-shadow:0 12px 35px #0005}
-    @media(max-width:800px){.navlinks{display:none}.hero{padding:54px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.visual{min-height:330px}.camera-art{height:215px}.services{grid-template-columns:repeat(2,1fr)}.cta{align-items:flex-start;flex-direction:column}}
-    @media(max-width:520px){.services{grid-template-columns:1fr}.brand{font-size:.83rem}.brandmark{width:40px;height:40px}.topbar .wrap{font-size:.78rem}.hero-actions .btn{width:100%}.checks{grid-template-columns:1fr}.visual-tag{font-size:.75rem}.tag-one{left:0}.tag-two{right:0}.camera-card{padding:14px}}
-  </style>
-</head><style>
-  :root {
-    --navy: #071A35;
-    --blue: #123C70;
-    --white: #FFFFFF;
-    --gold: #D9AE55;
-    --light: #F3F6FA;
+    :root {
+      --white: #ffffff;
+      --silver: #d9dde1;
+      --light-silver: #f3f4f5;
+      --mid-silver: #aeb5bb;
+      --charcoal: #20252a;
+      --muted: #626a72;
+      --border: #d5d9dd;
+      --shadow: 0 14px 35px rgba(32, 37, 42, 0.12);
+      --radius: 18px;
+    }* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--charcoal);
+  background: linear-gradient(135deg, #ffffff 0%, #eef0f2 48%, #ffffff 100%);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1160px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.top-strip {
+  background: var(--charcoal);
+  color: var(--white);
+  font-size: 0.86rem;
+  padding: 8px 0;
+}
+
+.top-strip .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 5px 18px rgba(32, 37, 42, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.nav-wrap {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.brand-mark {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--charcoal);
+  font-weight: 800;
+  background: linear-gradient(145deg, #ffffff, #b9c0c6);
+  border: 1px solid #aeb5bb;
+  box-shadow: inset 0 2px 4px #ffffff, 0 5px 12px rgba(32, 37, 42, 0.16);
+}
+
+.brand h1 {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.brand p {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+nav a {
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #707980;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border-radius: 8px;
+  border: 1px solid var(--charcoal);
+  background: var(--charcoal);
+  color: var(--white);
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(32, 37, 42, 0.2);
+}
+
+.btn-light {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--charcoal);
+  border-color: var(--white);
+}
+
+.hero {
+  padding: 28px 0 70px;
+}
+
+.hero-banner {
+  position: relative;
+  min-height: 570px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: #c8cdd1;
+  box-shadow: var(--shadow);
+  isolation: isolate;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(20, 24, 28, 0.82) 0%, rgba(20, 24, 28, 0.48) 42%, rgba(20, 24, 28, 0.08) 100%),
+    url("https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=1800&q=90")
+    center / cover no-repeat;
+  filter: saturate(0.55) contrast(1.05);
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 42%, rgba(210, 216, 220, 0.18));
+  pointer-events: none;
+}
+
+.hero-content {
+  min-height: 570px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 56px;
+  color: var(--white);
+}
+
+.eyebrow {
+  color: #e8ecef;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+
+.hero h2 {
+  max-width: 620px;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 560px;
+  color: #f0f2f3;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 76px 0;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 34px;
+}
+
+.section-heading span {
+  color: #737b82;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  margin: 8px 0 12px;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+.about-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.panel,
+.service-card,
+.contact-card {
+  background: linear-gradient(145deg, #ffffff, #eef0f2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 25px rgba(32, 37, 42, 0.07);
+}
+
+.panel {
+  padding: 32px;
+}
+
+.panel h3 {
+  font-size: 1.45rem;
+  margin-bottom: 14px;
+}
+
+.panel p {
+  color: var(--muted);
+}
+
+.details {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.detail {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.detail-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #c5cbd0);
+  border: 1px solid var(--mid-silver);
+  font-weight: 800;
+}
+
+.detail strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.detail span,
+.detail a {
+  color: var(--muted);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 28px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.service-number {
+  color: #7b838a;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.service-card h3 {
+  margin: 18px 0 10px;
+  font-size: 1.25rem;
+}
+
+.service-card p {
+  color: var(--muted);
+}
+
+.contact-card {
+  padding: 32px;
+}
+
+.contact-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.contact-card p {
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 15px;
+  font: inherit;
+  color: var(--charcoal);
+  background: var(--white);
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #7d858c;
+  box-shadow: 0 0 0 3px rgba(125, 133, 140, 0.14);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+footer {
+  padding: 28px 0;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.footer-wrap span {
+  color: #cbd0d4;
+}
+
+@media (max-width: 850px) {
+  .nav-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 0;
   }
 
-  * {
-    box-sizing: border-box;
+  nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
   }
 
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: var(--light);
-    color: var(--navy);
-    line-height: 1.6;
+  .hero-banner,
+  .hero-content {
+    min-height: 520px;
   }
 
-  header {
-    background: var(--navy);
-    color: var(--white);
-    padding: 24px 16px;
-    text-align: center;
-    border-bottom: 3px solid var(--gold);
+  .hero-content {
+    padding: 34px;
   }
 
-  header h1 {
-    margin: 0;
-    font-size: 26px;
-    letter-spacing: 1px;
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
-  header p {
-    margin: 8px 0 0;
-    color: #DCE6F5;
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  img {
+@media (max-width: 560px) {
+  .top-strip .container {
     display: block;
-    max-width: 100%;
-    height: auto;
+    text-align: center;
+  }
+
+  .top-strip .container div + div {
+    margin-top: 3px;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .brand h1 {
+    font-size: 0.92rem;
+  }
+
+  .brand p {
+    font-size: 0.62rem;
+  }
+
+  nav {
+    font-size: 0.82rem;
+  }
+
+  nav .btn {
+    min-height: 40px;
+    padding: 0 13px;
+  }
+
+  .hero {
+    padding-top: 16px;
+  }
+
+  .hero-banner {
+    min-height: 560px;
+    border-radius: 12px;
+  }
+
+  .hero-banner::before {
+    background:
+      linear-gradient(180deg, rgba(20, 24, 28, 0.2) 0%, rgba(20, 24, 28, 0.82) 62%, rgba(20, 24, 28, 0.94) 100%),
+      url("https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=1000&q=90")
+      center / cover no-repeat;
+  }
+
+  .hero-content {
+    min-height: 560px;
+    justify-content: flex-end;
+    padding: 25px;
+  }
+
+  .hero h2 {
+    font-size: 2.15rem;
   }
 
   section {
-    padding: 28px 18px;
+    padding: 56px 0;
   }
 
-  h2 {
-    color: var(--navy);
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 
+  .panel,
+  .contact-card,
   .service-card {
-    background: var(--white);
-    padding: 18px;
-    margin: 12px 0;
-    border-radius: 12px;
-    border-left: 4px solid var(--gold);
-    box-shadow: 0 4px 16px #071A3512;
+    padding: 24px;
   }
+}
 
-  .contact {
-    background: var(--navy);
-    color: var(--white);
-    padding: 28px 18px;
-    text-align: center;
-  }
-
-  .contact h2 {
-    color: var(--white);
-  }
-
-  .contact a {
-    color: var(--gold);
-  }
-</style>
+  </style>
+</head>
 <body>
-</header><img src="cctv-banner.jpg" alt="Shree Ganesh Computers CCTV Installation" style="width:100%; height:auto; border-radius:12px;">
-  <div class="topbar">
-    <div class="wrap"><span>📍 Subhash Chowk, Main Bazar, Dehu Road, Pune</span><span>Computer • CCTV • Networking Solutions</span></div>
-  </div>
-  <header>
-    <nav class="wrap">
+  <div class="top-strip">
+    <div class="container">
+      <div>282, Subhash Chowk, Main Bazar, Dehu Road, Pune</div>
+      <div>
+        <a href="tel:7040704089">7040704089</a>
+        &nbsp;|&nbsp;
+        <a href="tel:9657830434">9657830434</a>
+      </div>
+    </div>
+  </div>  <header>
+    <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="Shree Ganesh Computers home">
-        <span class="brandmark">SG</span>
-        <span>SHREE GANESH COMPUTERS<small>ALWAYS AHEAD FOR YOUR SERVICE</small></span>
-      </a>
-      <div class="navlinks"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-      <a class="btn primary" href="#contact">Get a Quote ↗</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="wrap hero-grid">
+        <div class="brand-mark">SG</div>
         <div>
-          <div class="eyebrow">● YOUR LOCAL TECHNOLOGY PARTNER</div>
-          <h1>Smarter Security.<br><span>Reliable Technology.</span></h1>
-          <p class="lead">CCTV installation, computer repairs and networking solutions for homes, shops and businesses in Dehu Road, Pune.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="https://wa.me/917040704089?text=Hello%20Shree%20Ganesh%20Computers%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener">WhatsApp Us ↗</a>
-            <a class="btn secondary" href="tel:+917040704089">Call 7040704089</a>
-          </div>
-          <div class="proof"><span>CCTV Sales & Installation</span><span>Repair & Support</span><span>Local Service</span></div>
+          <h1>SHREE GANESH COMPUTERS</h1>
+          <p>ALWAYS AHEAD FOR YOUR SERVICE</p>
         </div>
-        <div class="visual" aria-label="Illustration of a security camera">
-          <div class="orb"></div>
-          <div class="visual-tag tag-one">⌁ Smart Surveillance</div>
-          <div class="camera-card">
-            <div class="camera-art"><div class="cam"></div><div class="cam-label">SECURITY • CONNECTIVITY • CARE</div></div>
-            <p style="margin:16px 0 0;font-weight:800">Protect what matters.</p>
-            <p style="margin:3px 0 0;color:var(--muted);font-size:.9rem">CCTV & technology services made simple.</p>
-          </div>
-          <div class="visual-tag tag-two">✓ Installation & Service</div>
-        </div>
-      </div>
-    </section>
+      </a>  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a class="btn" href="#contact">Get a Quote</a>
+  </nav>
+</div>
 
-    <section id="services">
-      <div class="wrap">
-        <div class="section-head"><div class="kicker">What we do</div><h2>Solutions for your security & technology needs</h2><p>From camera installation to computer support, get practical service for your home, shop or office.</p></div>
-        <div class="services">
-          <article class="service"><div class="icon">📹</div><h3>CCTV Sales & Installation</h3><p>Security camera solutions, installation and maintenance for homes, shops and workplaces.</p></article>
-          <article class="service"><div class="icon">🖥️</div><h3>Computer Repairing</h3><p>Help with desktop issues, troubleshooting, upgrades and routine computer support.</p></article>
-          <article class="service"><div class="icon">💻</div><h3>Laptop Repairing</h3><p>Diagnosis and repair support for common laptop hardware and software issues.</p></article>
-          <article class="service"><div class="icon">🌐</div><h3>Networking</h3><p>Network setup and connectivity solutions for homes, shops and small offices.</p></article>
-          <article class="service"><div class="icon">🔔</div><h3>Video Door Phone</h3><p>Video door phone solutions to help you see and communicate with visitors.</p></article>
-          <article class="service"><div class="icon">☎️</div><h3>Intercom System</h3><p>Intercom solutions for convenient communication across your premises.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" style="background:#081a34">
-      <div class="wrap about-grid">
-        <div><div class="kicker">Why choose us</div><h2>Friendly support. Practical solutions.</h2><p class="muted">Shree Ganesh Computers serves Dehu Road, Pune with a focus on security systems, computer support and connectivity. Contact us to discuss your requirement and request a quote.</p><a class="btn secondary" href="#contact">Talk to our team →</a></div>
-        <div class="about-box"><h3 style="margin-top:0">Technology support for everyday needs</h3><p class="muted">Whether you need CCTV for a shop, help with a laptop, or networking for an office, tell us what you need and we’ll help you explore a suitable solution.</p><div class="checks"><div>CCTV installation</div><div>Computer support</div><div>Networking setup</div><div>Video door phone</div><div>Laptop repair</div><div>Intercom systems</div></div></div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap"><div class="cta"><div><div class="kicker">Need a quote?</div><h2>Let’s discuss your requirement.</h2><p class="muted" style="margin-bottom:0">Call or WhatsApp Shree Ganesh Computers today.</p></div><a class="btn primary" href="https://wa.me/917040704089?text=Hello%2C%20please%20share%20a%20quotation%20for%20your%20services." target="_blank" rel="noopener">Request a Quote ↗</a></div></div>
-    </section>
-
-    <section id="contact" style="padding-top:20px">
-      <div class="wrap">
-        <div class="section-head"><div class="kicker">Contact us</div><h2>We’re here to help</h2><p>Contact us for service details or a quotation.</p></div>
-        <div class="contact-grid">
-          <div class="contact-card"><h3>Business details</h3>
-            <div class="contact-line">📍 Subhash Chowk, Main Bazar, Dehu Road, Pune</div>
-            <div class="contact-line">☎️ <a href="tel:+917040704089">7040704089</a></div>
-            <div class="contact-line">☎️ <a href="tel:+919657830434">9657830434</a></div>
-            <div class="contact-line">🕒 Please call to confirm service availability.</div>
-          </div>
-          <div class="contact-card"><h3>Send an enquiry</h3><p class="muted">Choose WhatsApp and tell us which service you need.</p>
-            <p><a class="btn primary" href="https://wa.me/917040704089?text=Hello%20Shree%20Ganesh%20Computers.%20I%20need%20information%20about%3A%20" target="_blank" rel="noopener">Enquire on WhatsApp ↗</a></p>
-            <p><a class="btn secondary" href="tel:+919657830434">Call second number</a></p>
+  </header>  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-banner">
+          <div class="hero-content">
+            <div class="eyebrow">SECURITY • TECHNOLOGY • SERVICE</div>
+            <h2>ADVANCED CCTV SECURITY &amp; TECHNOLOGY SOLUTIONS</h2>
+            <p>CCTV • Computer &amp; Laptop Repair • Networking Solutions</p>
+            <div class="hero-actions">
+              <a class="btn btn-light" href="#contact">Get a Quote</a>
+              <a class="btn" href="tel:7040704089">Call Now</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </section><section id="about">
+  <div class="container">
+    <div class="section-heading">
+      <span>ABOUT US</span>
+      <h2>Reliable technology support for your home and business.</h2>
+      <p>
+        Shree Ganesh Computers is focused on practical, dependable CCTV,
+        computer, laptop, and networking solutions with service that stays
+        ahead of your needs.
+      </p>
+    </div>
 
-  <footer><div class="wrap"><span>© <span id="year"></span> SHREE GANESH COMPUTERS</span><span>Always Ahead For Your Service</span></div></footer>
-  <a class="float-wa" href="https://wa.me/917040704089?text=Hello%20Shree%20Ganesh%20Computers" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp ↗</a>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <div class="about-grid">
+      <div class="panel">
+        <h3>Professional. Responsive. Trusted.</h3>
+        <p>
+          From security camera requirements to everyday computer support,
+          we help you choose and maintain solutions that work smoothly.
+          Our approach is simple: clear guidance, quality service, and
+          attention to every detail.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>Visit or contact us</h3>
+        <div class="details">
+          <div class="detail">
+            <div class="detail-icon">A</div>
+            <div>
+              <strong>Address</strong>
+              <span>282, Subhash Chowk, Main Bazar, Dehu Road, Pune</span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="detail-icon">P</div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:7040704089">7040704089</a><br />
+              <a href="tel:9657830434">9657830434</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-heading">
+      <span>OUR SERVICES</span>
+      <h2>Complete support for your technology needs.</h2>
+      <p>
+        Explore our core services designed to keep your security and
+        technology systems dependable.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-number">01 / SECURITY</div>
+        <h3>CCTV Security Solutions</h3>
+        <p>
+          Professional CCTV solutions to help you monitor and protect your
+          property with confidence.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">02 / REPAIR</div>
+        <h3>Computer &amp; Laptop Repair</h3>
+        <p>
+          Practical support for computer and laptop issues, helping your
+          devices stay ready for work and everyday use.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-number">03 / CONNECTIVITY</div>
+        <h3>Networking Solutions</h3>
+        <p>
+          Reliable networking assistance for connected homes, offices, and
+          business environments.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-heading">
+      <span>CONTACT US</span>
+      <h2>Let’s discuss your requirement.</h2>
+      <p>
+        Call us directly or send your details and we will help you with
+        your CCTV, repair, or networking requirement.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <p>
+          Shree Ganesh Computers<br />
+          282, Subhash Chowk, Main Bazar, Dehu Road, Pune
+        </p>
+        <div class="details">
+          <div class="detail">
+            <div class="detail-icon">1</div>
+            <div>
+              <strong>Call</strong>
+              <a href="tel:7040704089">7040704089</a>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="detail-icon">2</div>
+            <div>
+              <strong>Call</strong>
+              <a href="tel:9657830434">9657830434</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Request a quote</h3>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="tel" name="phone" placeholder="Your phone number" required />
+          <textarea name="message" placeholder="Tell us about your requirement"></textarea>
+          <button class="btn" type="submit">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container footer-wrap">
+      <strong>SHREE GANESH COMPUTERS</strong>
+      <span>ALWAYS AHEAD FOR YOUR SERVICE</span>
+    </div>
+  </footer>
 </body>
 </html>
