@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shreeganeshcomputers6442-create.github.io/shree-ganesh-computer/sitemap.xml
